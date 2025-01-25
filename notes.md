@@ -7,7 +7,7 @@
 # Quick notes
 1. The shared folder is shared code that isnt important besides helping with the process. do not put anything in it that needs to be gone over. exmaple if we need i2c devices in multiple bins just copy and paste. More important to keep it simple and abstract teh things away we are not teaching
 2. Have 2 of each. Have like a startign template to work through, then the completed one. Maybe also have like a bonus for after the workshop?
-
+<!-- 3. Make sure to have easy to copy `cargo run --bin 01_...` so its easy to run. Maybe find a vs code extension to do it -->
 
 
 
@@ -15,8 +15,15 @@
 
 ## 01 Hello World
 
+
 Every great adventure in programming starts with a Hello World! This is no difference.
 
 Inside of [01_hello_world_begin.rs](/src/bin/01_hello_world_begin.rs) you will find the starting template.
 
 todo should I write notes here or just use code comments? Should we type out things or rely on the bonus things?
+
+
+
+
+//todo make an example with a button press and show the match for on/off for the neo pixel
+//Make sure to explaina nd show match since its a rust thing
