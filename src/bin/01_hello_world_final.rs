@@ -26,7 +26,7 @@ async fn main(spawner: Spawner) {
     //Any thing you see with async in front of it needs to be awaited, there is also a warning during build
     Timer::after(Duration::from_secs(2)).await;
 
-    log::info!("I am running on the Pico!");
+    log::info!("Hello world! I am running on the Pico!");
 
     log::info!("Can press ctrl + c to stop and the Pico will reboot to BOOTSEL mode");
 
@@ -43,6 +43,8 @@ async fn main(spawner: Spawner) {
     maybe_two += 1;
     log::info!("Two: {}", maybe_two);
     //This type of ownership helps ensure memory safety and a lower memory footprint
+
+    //**BONUS: Create a counter variable, increment it every loop and log it in the loop below **/
     let mut counter = 0;
     loop {
         log::info!("Counter: {}", counter);
